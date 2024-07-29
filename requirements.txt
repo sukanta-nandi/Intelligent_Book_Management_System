@@ -1,0 +1,7 @@
+Quart==0.19.6
+SQLAlchemy==2.0.31
+asyncpg==0.29.0
+marshmallow==3.21.3
+Werkzeug==3.0.3
+PyJWT==2.8.0
+
