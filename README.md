@@ -38,12 +38,12 @@ Intelligent_Book_Management_System is a RESTful API built with Quart and SQLAlch
 
 #### Register a new user
 ```bash
-curl -X POST http://localhost:5000/auth/register -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpassword"}'
+curl -X POST http://localhost:5000/register -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpassword"}'
 ```
 
 #### Login
 ```bash
-curl -X POST http://localhost:5000/auth/login -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpassword"}'
+curl -X POST http://localhost:5000/login -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpassword"}'
 ```
 
 #### Add a new book

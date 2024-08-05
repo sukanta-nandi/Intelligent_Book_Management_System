@@ -11,7 +11,9 @@ from app.schemas import UserSchema
 auth_bp = Blueprint('auth', __name__)
 user_schema = UserSchema()
 
+
 def create_token(user_id):
+    print(current_app.config['SECRET_KEY'])
     payload = {
         'user_id': user_id,
         'exp': datetime.utcnow() + timedelta(hours=24)  # Token valid for 24 hours
@@ -21,6 +23,7 @@ def create_token(user_id):
 
 @auth_bp.route('/register', methods=['POST'])
 async def register():
+    print("REGISTER CALLED")
     user_data = await request.get_json()
     try:
         user = user_schema.load(user_data)
