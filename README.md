@@ -28,6 +28,7 @@ Intelligent_Book_Management_System is a RESTful API built with Quart and SQLAlch
 3. **Build and run the Docker containers**:
    ```bash
    docker-compose up --build
+   docker-compose up -d
    ```
 
 4. **Access the application**:
